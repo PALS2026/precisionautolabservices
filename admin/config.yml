@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/precision-auto-lab-website
+  branch: main
+  # Authentication must be connected once through a GitHub OAuth provider.
+media_folder: "uploads"
+public_folder: "/uploads"
+publish_mode: simple
+site_url: "https://YOUR-NETLIFY-SITE.netlify.app"
+collections:
+  - name: "inventory"
+    label: "Vehicle inventory"
+    files:
+      - name: "vehicles"
+        label: "Vehicles"
+        file: "content/vehicles.json"
+        format: "json"
+        fields:
+          - label: "Vehicles"
+            name: "vehicles"
+            widget: "list"
+            summary: "{{fields.year}} {{fields.make}} {{fields.model}} — {{fields.status}}"
+            fields:
+              - { label: "Year", name: "year", widget: "number", value_type: "int" }
+              - { label: "Make", name: "make", widget: "string" }
+              - { label: "Model", name: "model", widget: "string" }
+              - { label: "Trim / version", name: "trim", widget: "string", required: false }
+              - { label: "Price (CAD, numbers only)", name: "price", widget: "number", value_type: "int" }
+              - { label: "Price label", name: "priceLabel", widget: "string", default: " plus HST and licensing", required: false }
+              - { label: "Mileage (km)", name: "mileage", widget: "number", value_type: "int" }
+              - { label: "Engine", name: "engine", widget: "string", required: false }
+              - { label: "Transmission", name: "transmission", widget: "string", required: false }
+              - { label: "Drivetrain", name: "drivetrain", widget: "string", required: false }
+              - { label: "Exterior colour", name: "exterior", widget: "string", required: false }
+              - { label: "Interior", name: "interior", widget: "string", required: false }
+              - { label: "Vehicle category", name: "category", widget: "select", options: ["suv", "sedan", "truck", "other"], default: "other" }
+              - { label: "Listing status", name: "status", widget: "select", options: [{label: "Available", value: "available"}, {label: "Sold", value: "sold"}, {label: "Hide listing", value: "hidden"}], default: "available" }
+              - { label: "Photos", name: "photos", widget: "list", field: { label: "Photo", name: "photo", widget: "image" }, required: false }
+              - { label: "Highlights", name: "highlights", widget: "list", field: { label: "Highlight", name: "highlight", widget: "string" }, required: false }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "VIN", name: "vin", widget: "string", required: false }
+              - { label: "Price includes / pricing disclosure", name: "priceIncludes", widget: "text", required: false }
+              - { label: "Safety certificate disclosure", name: "safetyDisclosure", widget: "text", required: false }
+              - { label: "Other written disclosures", name: "disclosure", widget: "text", required: false }
