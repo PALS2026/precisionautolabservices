@@ -26,39 +26,6 @@
         "Ready to drive"
       ],
       "photos": [
-        "/uploads/1793407675201-2013-bmw-328i-1.jpg",
-        "/uploads/1793407676696-2013-bmw-328i-2.jpg",
-        "/uploads/1793407678127-2013-bmw-328i-3.jpg",
-        "/uploads/1793407679622-2013-bmw-328i-4.jpg",
-        "/uploads/1793407681120-2013-bmw-328i-5.jpg"
-      ]
-    },
-    {
-      "year": 2013,
-      "price": 13000,
-      "mileage": 112000,
-      "make": "BMW",
-      "model": "3 Series",
-      "trim": "328i xDrive Classic Line",
-      "status": "available",
-      "engine": "2.0L TwinPower Turbo",
-      "transmission": "8-speed automatic",
-      "drivetrain": "xDrive AWD",
-      "exterior": "Metallic bronze",
-      "interior": "Beige leather",
-      "category": "sedan",
-      "description": "A clean, well-presented example with a responsive turbo four-cylinder engine and BMW's all-wheel drive system.",
-      "vin": "WBA3B3C59DJ810465",
-      "priceIncludes": "A safety standards certificate, warranty and all mandatory dealer fees. HST and licensing are extra.",
-      "safetyDisclosure": "Safety Standard Certificate confirms the vehicle met certain basic safety standards on the date of inspection.",
-      "disclosure": "This is a used vehicle. Full written disclosures (history, any required repairs, etc.) will be provided on the bill of sale as required by OMVIC.",
-      "priceLabel": " plus HST and licensing",
-      "highlights": [
-        "Safety Standards Certificate Included",
-        "Warranty included",
-        "Ready to drive"
-      ],
-      "photos": [
         "/uploads/1793407663972-2013-bmw-328i-1.jpg",
         "/uploads/1793407666155-2013-bmw-328i-2.jpg",
         "/uploads/1793407667586-2013-bmw-328i-3.jpg",
